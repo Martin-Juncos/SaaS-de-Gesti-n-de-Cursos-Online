@@ -1,0 +1,47 @@
+:root {
+  --font-heading: "Space Grotesk", "Trebuchet MS", "Segoe UI", sans-serif;
+  --font-body: "Manrope", "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", Consolas, monospace;
+
+  --content-max-width: 1120px;
+
+  --color-bg-canvas: #f2f6f8;
+  --color-bg-glow: #d4f5ef;
+  --color-bg-grid: rgba(12, 57, 52, 0.08);
+  --color-surface: #ffffff;
+  --color-surface-soft: #f5f9fb;
+  --color-surface-muted: #ebf2f6;
+  --color-border: #d4e2e8;
+  --color-border-strong: #aec2cc;
+
+  --color-text: #122632;
+  --color-text-muted: #4f6876;
+  --color-primary: #0b8e7f;
+  --color-primary-strong: #076257;
+  --color-primary-soft: #d3f3ee;
+  --color-accent: #ec9b61;
+  --color-danger: #b42318;
+  --color-success: #157f58;
+  --color-white: #ffffff;
+
+  --shadow-sm: 0 8px 20px rgba(16, 24, 40, 0.08);
+  --shadow-md: 0 14px 34px rgba(16, 24, 40, 0.12);
+  --shadow-focus: 0 0 0 3px rgba(11, 142, 127, 0.25);
+
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.75rem;
+  --space-7: 2.25rem;
+  --space-8: 3rem;
+
+  --transition-fast: 160ms cubic-bezier(0.2, 0.9, 0.2, 1);
+  --transition-normal: 260ms cubic-bezier(0.2, 0.9, 0.2, 1);
+}
