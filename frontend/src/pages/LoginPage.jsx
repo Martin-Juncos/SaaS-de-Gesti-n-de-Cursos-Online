@@ -14,7 +14,7 @@ export default function LoginPage() {
   const [error, setError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const from = location.state?.from?.pathname || '/courses';
+  const from = location.state?.from?.pathname || '/dashboard/home';
 
   async function handleSubmit(event) {
     event.preventDefault();

@@ -21,7 +21,7 @@ export default function RegisterPage() {
     setIsSubmitting(true);
     try {
       await register({ fullName, email, password, role });
-      navigate('/courses', { replace: true });
+      navigate('/dashboard/home', { replace: true });
     } catch (apiError) {
       setError(apiError.message || 'No se pudo completar el registro');
     } finally {

@@ -8,6 +8,7 @@ import CourseDetailPage from './pages/CourseDetailPage';
 import InstructorDashboardPage from './pages/InstructorDashboardPage';
 import StudentDashboardPage from './pages/StudentDashboardPage';
 import AdminDashboardPage from './pages/AdminDashboardPage';
+import DashboardHomePage from './pages/DashboardHomePage';
 import NotFoundPage from './pages/NotFoundPage';
 
 export default function App() {
@@ -19,6 +20,10 @@ export default function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/courses" element={<CoursesPage />} />
         <Route path="/courses/:courseId" element={<CourseDetailPage />} />
+
+        <Route element={<ProtectedRoute roles={['student', 'instructor', 'admin']} />}>
+          <Route path="/dashboard/home" element={<DashboardHomePage />} />
+        </Route>
 
         <Route element={<ProtectedRoute roles={['student']} />}>
           <Route path="/dashboard/student" element={<StudentDashboardPage />} />

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tailwind Future UI Builder"
+  short_description: "Landing React/Tailwind con estilos 2026"
+  default_prompt: "Elige entre Spatial UI, Sentient UX, Liquid Glass, Zero UI o Kinetic Typography y genera JSX/HTML completo con Tailwind CSS, tailwind.config.js si aplica y breve explicación de tipografía/paleta."

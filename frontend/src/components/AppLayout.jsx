@@ -5,16 +5,22 @@ import Button from './ui/Button';
 export default function AppLayout() {
   const { user, isAuthenticated, logout } = useAuth();
   const navClassName = ({ isActive }) => `nav-link ${isActive ? 'active' : ''}`;
+  const homePath = isAuthenticated ? '/dashboard/home' : '/courses';
 
   return (
     <div className="app-shell">
       <header className="app-header">
         <div className="app-header-inner">
-          <Link to="/courses" className="brand">
+          <Link to={homePath} className="brand">
             <span className="brand-mark" aria-hidden="true" />
             Course SaaS
           </Link>
           <nav className="main-nav">
+            {isAuthenticated && (
+              <NavLink to="/dashboard/home" className={navClassName}>
+                Inicio
+              </NavLink>
+            )}
             <NavLink to="/courses" className={navClassName}>
               Cursos
             </NavLink>
